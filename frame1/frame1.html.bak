@@ -1,0 +1,14 @@
+<html>
+<frameset rows="20%, 80%">
+<frame src="top_frame1.html" name="MES COLLEGE OF ENGINEERING, KUTTIPPURAM" noesize>
+<frameset cols="25%, 75%">
+<frame src="left_frame1.html" name="MCA">
+<frame src="right_frame1.html" name="About MESCE">
+</frameset>
+<noframes>
+<body>
+Your browser does not support frames.
+</body>
+</noframes>
+</frameset>
+</html>

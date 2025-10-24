@@ -1,0 +1,11 @@
+<html>
+<head><title>Right Frame</title></head>
+<body bgcolor= "indigo" text="white">
+<h2 align="center">About MESCE</h2>
+<p> MES College of Engineering refers to two prominent institutions in Kerala: the original MES College of Engineering, Kuttippuram (MESCE), established in 
+1994 as the first self-financing engineering college in the state, and the later MES College of Engineering and Technology (MESCET) in Kunnukara, established 
+in 2011. MESCE offers a range of undergraduate, postgraduate, and doctoral programs and is known for its focus on technical education and community upliftment.
+ MESCET is also an AICTE-approved institution affiliated with the APJ Abdul Kalam Technological University.</p>
+ <img src="mes.png">
+</body>
+</html>
