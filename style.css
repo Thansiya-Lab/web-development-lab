@@ -1,0 +1,20 @@
+body{ background-color: #f4f4f4;}
+h1{ text-align: center;
+    color: darkblue;
+    font-family: Georgia, serif;
+    font-style: oblique; }
+p { color: darkgreen;
+    font-family: 'Palatino Linotype';
+    font-size: 18px;
+    font-style: italic; }
+h2 { color: maroon;
+    font-family: 'Lucida Handwriting', cursive; }
+ul { color: purple;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 17px; }
+ol { color: brown;
+	font-family: 'Comic Sans MS', cursive;
+    font-size: 17px; }
+h2:nth-of-type(2) { color: teal;
+    font-family: 'Times New Roman', serif;
+    font-style: oblique; }
