@@ -1,0 +1,48 @@
+<html>
+<head>
+<style>
+table { width: 80%;
+        margin: 40px auto;
+        border-collapse: collapse;
+        background-color: #fff;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+th, td { padding: 15px;
+         text-align: center;
+         border: 1px solid #ddd; }
+th { background-color: #1976d2;
+            color: white;
+            font-size: 18px; }
+tr:nth-child(even) { background-color: #f1f8e9; }
+tr:hover { background-color: #e3f2fd;
+            transition: 0.3s; }
+caption { caption-side: bottom;
+            padding: 10px;
+            font-style: italic;
+            color: #555; }
+</style>
+</head>
+<body>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>Wonder</th>
+<th>Location</th>
+<th>Country</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Great Wall of China</td>
+<td>Beijing</td>
+<td>China</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Petra</td>
+<td>Ma'an</td>
+<td>Jordan</td>
+</tr>
+<tr>
+<td>3</td>

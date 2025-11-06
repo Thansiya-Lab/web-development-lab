@@ -1,0 +1,8 @@
+<html>
+<body>
+<script>
+let t = st.replaceAll(“js”, “Javascript”);
+console.log(t);
+</script>
+</body>
+</html>

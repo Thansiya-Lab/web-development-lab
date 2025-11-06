@@ -1,0 +1,7 @@
+<html>
+<head><title>java</title></head>
+<body>
+<script>
+document.write("Welcome to JavaScript programming");
+</script></body>
+<html>
