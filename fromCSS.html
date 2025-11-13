@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1a5276;
+      margin-bottom: 25px;
+      font-size: 26px;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="date"]:focus,
+    textarea:focus,
+    select:focus {
+      border-color: #1a5276;
+      outline: none;
+      box-shadow: 0 0 5px rgba(26, 82, 118, 0.4);
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 10px;
+      margin-top: 5px;
+    }
+
+    legend {
+      font-weight: bold;
+      color: #1a5276;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      margin-right: 8px;
+    }
+
+    .button-group {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: #1a5276;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 0 5px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #154360;
+    }
+
+    input[type="reset"] {
+      background-color: #a93226;
+    }
+
+    input[type="reset"]:hover {
+      background-color: #7b241c;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" method="post">
+    <h1>REGISTRATION FORM</h1>
+
+    <section>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required placeholder="Enter your name">
+    </section>
+
+    <section>
+      <label for="password">Password</label>
+      <input type="password" name="password" maxlength="6" id="password" required placeholder="Max 6 characters">
+    </section>
+
+    <section>
+      <label for="mobile">Mobile</label>
+      <input type="text" name="mobile" maxlength="12" id="mobile" required pattern="[0-9]{10,12}" placeholder="10–12 digits">
+    </section>
+
+    <section>
+      <label for="dob">DOB</label>
+      <input type="date" name="dob" id="dob" required>
+    </section>
+
+    <section>
+      <label>Gender</label>
+      <div>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other
+      </div>
+    </section>
+
+    <section>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required placeholder="example@email.com">
+    </section>
+
+    <section>
+      <label for="address">Address</label>
+      <textarea name="address" id="address" rows="3" placeholder="Enter your address"></textarea>
+    </section>
+
+    <section>
+      <label for="nationality">Nationality</label>
+      <select name="nationality" id="nationality" required>
+        <option value="Indian">Indian</option>
+        <option value="German">German</option>
+        <option value="American">American</option>
+      </select>
+    </section>
+
+    <section>
+      <label>Languages</label>
+      <fieldset>
+        <legend>Languages Known</legend>
+        <input type="checkbox" name="language[]" value="malayalam" checked> Malayalam<br>
+        <input type="checkbox" name="language[]" value="english"> English<br>
+        <input type="checkbox" name="language[]" value="hindi"> Hindi<br>
+      </fieldset>
+    </section>
+
+    <div class="button-group">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Cancel">
+    </div>
+  </form>
+</body>
+</html>

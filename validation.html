@@ -1,0 +1,116 @@
+<html>
+<head>
+  <title>Form Validation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 40px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      width: 320px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .error {
+      color: red;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <form onsubmit="return validateForm()">
+    <h2>Validation Form</h2>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+    <div id="nameError" class="error"></div>
+
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" placeholder="Enter your phone number">
+    <div id="phoneError" class="error"></div>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password">
+    <div id="passwordError" class="error"></div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    function validateForm() {
+      let name = document.getElementById("name").value.trim();
+	  let password = document.getElementById("password").value.trim();
+      let phone = document.getElementById("phone").value.trim();
+      
+
+      let nameError = document.getElementById("nameError");
+      
+      let passwordError = document.getElementById("passwordError");
+	  let phoneError = document.getElementById("phoneError");
+
+      nameError.textContent = "";
+      phoneError.textContent = "";
+      passwordError.textContent = "";
+
+      let valid = true;
+
+      // Validate Name
+      if (name === "") {
+        nameError.textContent = "Name cannot be empty.";
+        valid = false;
+      } else if (!/^[A-Za-z\s]+$/.test(name)) {
+        nameError.textContent = "Only letters and spaces are allowed.";
+        valid = false;
+      }
+
+      // Validate Phone Number
+      if (phone === "") {
+        phoneError.textContent = "Phone number cannot be empty.";
+        valid = false;
+      } else if (!/^[0-9]+$/.test(phone)) {
+        phoneError.textContent = "Only numbers are allowed.";
+        valid = false;
+      } else if (phone.length > 12) {
+        phoneError.textContent = "Phone number cannot exceed 12 digits.";
+        valid = false;
+      }
+
+      // Validate Password
+      if (password === "") {
+        passwordError.textContent = "Password cannot be empty.";
+        valid = false;
+      } else if (password.length > 8) {
+        passwordError.textContent = "Password cannot exceed 8 characters.";
+        valid = false;
+      }
+
+      return valid;
+    }
+  </script>
+
+</body>
+</html>
